@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>      <!-- Un color morado, puedes cambiarlo -->
-    <color name="colorAccent">#03DAC5</color>        <!-- Un color teal, puedes cambiarlo -->
-    <color name="white">#FFFFFF</color>              <!-- Blanco, puedes usarlo si es necesario -->
-    <color name="black">#000000</color>              <!-- Negro, puedes usarlo si es necesario -->
+    <color name="colorPrimary">#4A90E2</color>      <!-- Azul claro -->
+    <color name="colorAccent">#50E3C2</color>        <!-- Verde aqua suave -->
+    <color name="white">#FFFFFF</color>              <!-- Blanco -->
+    <color name="black">#333333</color>              <!-- Negro oscuro, más suave que el puro -->
 </resources>
+

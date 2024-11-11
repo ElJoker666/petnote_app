@@ -10,47 +10,48 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:src="@drawable/ic_note" />
+        android:layout_height="100dp"
+        android:src="@drawable/ic_note" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Registrar"
         android:textSize="24sp"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"/>
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Ingrese su nombre"
-        android:inputType="textPersonName"
-        android:layout_marginTop="16dp"/>
+
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:hint="Ingrese su correo electrónico"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
 
     <EditText
         android:id="@+id/password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:hint="Ingrese su contraseña"
         android:inputType="textPassword"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
 
     <EditText
         android:id="@+id/repeat_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:hint="Repita su contraseña"
         android:inputType="textPassword"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:padding="16dp"/>
 
     <Button
         android:id="@+id/register_button"
@@ -66,8 +67,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Ya tienes una cuenta? Regresar a Iniciar Sesión"
-        android:textColor="@color/black"
         android:layout_marginTop="16dp"
         android:clickable="true"
         android:focusable="true"/>
+
 </LinearLayout>
+
+
+
+
+
+

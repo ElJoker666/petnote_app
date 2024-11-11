@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
+        <!-- SplashActivity con intent-filter -->
         <activity android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -18,9 +19,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity" />
+        <!-- Actividades sin intent-filter -->
+        <activity android:name=".LoginActivity"
+            android:exported="true" />
+        <activity android:name=".RegisterActivity"
+            android:exported="true" />
+        <activity android:name=".MainActivity"
+            android:exported="true" />
+        <activity android:name=".AddNoteActivity"
+            android:exported="true" />
+        <activity android:name=".EditNoteActivity"
+            android:exported="true"/>
+
     </application>
 
 </manifest>

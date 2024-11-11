@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp"
     android:background="@android:color/white">
 
+    <!-- Título de bienvenida -->
     <TextView
         android:id="@+id/welcome_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido, Antonio"
+        android:text="Bienvenido"
         android:textSize="26sp"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="16dp"/>
 
+    <!-- Línea divisoria -->
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"
-        android:layout_below="@id/welcome_text"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="16dp"/>
 
-    <ListView
+    <!-- RecyclerView para mostrar las notas -->
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/notes_list"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_above="@+id/fab_add_note"
-        android:layout_below="@id/welcome_text"
-        android:divider="@android:color/transparent"
-        android:layout_marginBottom="8dp"
-        tools:ignore="NotSibling" />
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
 
+    <!-- Botón flotante para agregar notas -->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
-
+        android:layout_height="wrap_content">
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_add_note"
             android:layout_width="wrap_content"
@@ -50,7 +50,18 @@
             android:elevation="6dp" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-</RelativeLayout>
+    <!-- Botón de cerrar sesión -->
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Cerrar sesión"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
 
 
 
